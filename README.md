@@ -2,41 +2,38 @@
 
 ## Requisitos
 
-- Servidor web (Apache/Nginx ou Live Server)
-- MySQL 5.7+ ou MariaDB
-- Navegador web moderno
+- Servidor web (Apache via XAMPP)
+- MySQL (Via XAMPP)
+- Navegador web
 
 ## Passos para rodar o projeto
 
 1. **Clone o repositório**
+   - IMPORTANTE: Deve ser inserido na pasta 'C:\xampp\htdocs';
    ```bash
    git clone https://github.com/dcalixxto/trampoJa.git
    cd trampoJa
    ```
 
-2. **Configure o banco de dados**
-   ```sql
-   CREATE DATABASE trampo_ja;
-   USE trampo_ja;
-   SOURCE banco.sql;
-   ```
+2. **Execute o projeto via XAMPP**
+   - Inicie Apache e MySQL Server;
+   - Abra o Admim do MySQL;
 
-3. **Execute o projeto**
-   - Abra o arquivo `public/index.html` em um servidor web
-   - Ou use Live Server: `http://localhost:5500/public/index.html`
+3. **Inserir Banco de Dados**
+   - Copie o arquivo banco.sql;
+   - Cole na query e execute;
+
+4. **Acessar a página**
+   - No navegador, abra: 'http://localhost/trampoja/public/index.php'.
 
 ## Usuário/senha de teste
 
 ```
 Admin:
-Email: admin@trampo-ja.com
-Senha: admin123
+Email: danielcalixto@email.com
+Senha: senha123
 
-Usuário:
-Email: joao@email.com
-Senha: user123
+Usuário Freelancer:
+Email: lucaseduardo@email.com
+Senha: senha123
 ```
-
-## Breve descrição do fluxo implementado
-
-O sistema implementa uma tela de login com validação em tempo real de e-mail. O usuário acessa a página principal, insere suas credenciais (e-mail e senha), e o sistema valida o formato do e-mail com feedback visual instantâneo. Inclui opções de "Esqueceu a senha?" e "Mantenha-me conectado", além de um link para cadastro de novos usuários. A interface é responsiva e utiliza um design system com paleta de cores amarelo/preto/cinza.
