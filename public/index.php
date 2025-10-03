@@ -54,11 +54,6 @@ elseif (isset($_SESSION['mensagem_sucesso'])) {
                     <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
                 </div>
 
-                <div class="options">
-                    <a href="#">Esqueceu a senha?</a>
-                    <label><input type="checkbox"> Mantenha-me conectado</label>
-                </div>
-
                 <button type="submit" class="btn">Entrar</button>
             </form>
 
